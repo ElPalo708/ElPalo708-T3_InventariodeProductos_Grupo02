@@ -1,0 +1,32 @@
+[33mcommit b7a694e2d891871d59b7d609b899e1acfc17aca7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: ElPalo <elpalo14019@gmail.com>
+Date:   Tue Jun 16 10:18:32 2026 -0500
+
+    (Andrés Palomino) Menu principal y registro de productos
+
+InventarioProductos/InventarioProductos.csproj
+InventarioProductos/Program.cs
+InventarioProductos/bin/Debug/net10.0/InventarioProductos.deps.json
+InventarioProductos/bin/Debug/net10.0/InventarioProductos.dll
+InventarioProductos/bin/Debug/net10.0/InventarioProductos.exe
+InventarioProductos/bin/Debug/net10.0/InventarioProductos.pdb
+InventarioProductos/bin/Debug/net10.0/InventarioProductos.runtimeconfig.json
+InventarioProductos/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+InventarioProductos/obj/Debug/net10.0/InventarioProductos.AssemblyInfo.cs
+InventarioProductos/obj/Debug/net10.0/InventarioProductos.AssemblyInfoInputs.cache
+InventarioProductos/obj/Debug/net10.0/InventarioProductos.GeneratedMSBuildEditorConfig.editorconfig
+InventarioProductos/obj/Debug/net10.0/InventarioProductos.GlobalUsings.g.cs
+InventarioProductos/obj/Debug/net10.0/InventarioProductos.assets.cache
+InventarioProductos/obj/Debug/net10.0/InventarioProductos.csproj.CoreCompileInputs.cache
+InventarioProductos/obj/Debug/net10.0/InventarioProductos.csproj.FileListAbsolute.txt
+InventarioProductos/obj/Debug/net10.0/InventarioProductos.dll
+InventarioProductos/obj/Debug/net10.0/InventarioProductos.genruntimeconfig.cache
+InventarioProductos/obj/Debug/net10.0/InventarioProductos.pdb
+InventarioProductos/obj/Debug/net10.0/apphost.exe
+InventarioProductos/obj/Debug/net10.0/ref/InventarioProductos.dll
+InventarioProductos/obj/Debug/net10.0/refint/InventarioProductos.dll
+InventarioProductos/obj/InventarioProductos.csproj.nuget.dgspec.json
+InventarioProductos/obj/InventarioProductos.csproj.nuget.g.props
+InventarioProductos/obj/InventarioProductos.csproj.nuget.g.targets
+InventarioProductos/obj/project.assets.json
+InventarioProductos/obj/project.nuget.cache

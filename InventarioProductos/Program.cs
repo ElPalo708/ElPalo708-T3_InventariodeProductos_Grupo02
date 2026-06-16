@@ -134,4 +134,26 @@ class Program
 
         Console.WriteLine("\nProducto registrado correctamente.");
     }
+
+    static void MostrarProductos()
+{
+    if (codigos.Count == 0)
+    {
+        Console.WriteLine("No hay productos registrados.");
+        return;
+    }
+
+    Console.WriteLine("\n=== LISTA DE PRODUCTOS ===");
+
+    for (int i = 0; i < codigos.Count; i++)
+    {
+        Console.WriteLine($"Producto #{i + 1}");
+        Console.WriteLine($"Código: {codigos[i]}");
+        Console.WriteLine($"Nombre: {nombres[i]}");
+        Console.WriteLine($"Precio: S/ {precios[i]}");
+        Console.WriteLine($"Stock: {stock[i]}");
+        Console.WriteLine("-------------------------");
+    } 
 }
+}
+
