@@ -155,31 +155,33 @@ class Program
         Console.WriteLine("-------------------------");
     } 
 }
-static void BuscarProducto()
-{
-    if (codigos.Count == 0)
-    {
-        Console.WriteLine("No hay productos registrados.");
-        return;
-    }
 
+    static void BuscarProducto()
+{
     Console.Write("Ingrese el código a buscar: ");
     string codigoBuscar = Console.ReadLine();
 
-    int posicion = codigos.IndexOf(codigoBuscar);
+    bool encontrado = false;
 
-    if (posicion != -1)
+    for (int i = 0; i < codigos.Count; i++)
     {
-        Console.WriteLine("\n=== PRODUCTO ENCONTRADO ===");
-        Console.WriteLine($"Código: {codigos[posicion]}");
-        Console.WriteLine($"Nombre: {nombres[posicion]}");
-        Console.WriteLine($"Precio: S/ {precios[posicion]}");
-        Console.WriteLine($"Stock: {stock[posicion]}");
+        if (codigos[i] == codigoBuscar)
+        {
+            Console.WriteLine("\n=== PRODUCTO ENCONTRADO ===");
+            Console.WriteLine($"Código: {codigos[i]}");
+            Console.WriteLine($"Nombre: {nombres[i]}");
+            Console.WriteLine($"Precio: S/ {precios[i]}");
+            Console.WriteLine($"Stock: {stock[i]}");
+
+            encontrado = true;
+            break;
+        }
     }
-    else
+
+    if (!encontrado)
     {
         Console.WriteLine("Producto no encontrado.");
     }
 }
-}
 
+}
