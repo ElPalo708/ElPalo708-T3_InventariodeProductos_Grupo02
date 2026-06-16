@@ -1,0 +1,14 @@
+C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\bin\Debug\net10.0\InventarioProductos.exe
+C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\bin\Debug\net10.0\InventarioProductos.deps.json
+C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\bin\Debug\net10.0\InventarioProductos.runtimeconfig.json
+C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\bin\Debug\net10.0\InventarioProductos.dll
+C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\bin\Debug\net10.0\InventarioProductos.pdb
+C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\obj\Debug\net10.0\InventarioProductos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\obj\Debug\net10.0\InventarioProductos.AssemblyInfoInputs.cache
+C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\obj\Debug\net10.0\InventarioProductos.AssemblyInfo.cs
+C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\obj\Debug\net10.0\InventarioProductos.csproj.CoreCompileInputs.cache
+C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\obj\Debug\net10.0\InventarioProductos.dll
+C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\obj\Debug\net10.0\refint\InventarioProductos.dll
+C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\obj\Debug\net10.0\InventarioProductos.pdb
+C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\obj\Debug\net10.0\InventarioProductos.genruntimeconfig.cache
+C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\obj\Debug\net10.0\ref\InventarioProductos.dll
