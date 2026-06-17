@@ -257,3 +257,29 @@ static void OrdenarProducto()
         }
         Console.WriteLine("\nProductos ordenados por precio exitosamente.");
     }
+static void MostrarResumen()
+    {
+        if (contador == 0)
+        {
+            Console.WriteLine("No hay productos registrados para generar un resumen.");
+            return;
+        }
+
+        double sumaTotalPrecios = 0;
+        int indiceMayor = 0;
+        int indiceMenor = 0;
+
+        for (int i = 0; i < contador; i++)
+        {
+            sumaTotalPrecios += precios[i];
+            if (precios[i] > precios[indiceMayor]) indiceMayor = i;
+            if (precios[i] < precios[indiceMenor]) indiceMenor = i;
+        }
+
+        Console.WriteLine("\n====== RESUMEN DE PRODUCTOS ======");
+        Console.WriteLine($"Total de elementos registrados: {contador}");
+        Console.WriteLine($"Suma total del campo numérico (Precios): S/ {sumaTotalPrecios}");
+        Console.WriteLine($"Elemento con mayor valor: {nombres[indiceMayor]} (S/ {precios[indiceMayor]})");
+        Console.WriteLine($"Elemento con menor valor: {nombres[indiceMenor]} (S/ {precios[indiceMenor]})");
+        Console.WriteLine("==================================");
+    }
