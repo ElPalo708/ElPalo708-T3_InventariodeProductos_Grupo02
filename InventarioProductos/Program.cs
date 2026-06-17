@@ -185,3 +185,101 @@ class Program
 }
 
 }
+static void EliminarProducto()
+    {
+        if (contador == 0)
+        {
+            Console.WriteLine("No hay productos registrados para eliminar.");
+            return;
+        }
+
+        Console.Write("Ingrese el código del producto a eliminar: ");
+        string codigoBuscar = Console.ReadLine();
+        int posicionEncontrada = -1;
+
+        for (int i = 0; i < contador; i++)
+        {
+            if (codigos[i] == codigoBuscar)
+            {
+                posicionEncontrada = i;
+                break;
+            }
+        }
+
+        if (posicionEncontrada == -1)
+        {
+            Console.WriteLine("Producto no encontrado.");
+        }
+        else
+        {
+            for (int i = posicionEncontrada; i < contador - 1; i++)
+            {
+                codigos[i] = codigos[i + 1];
+                nombres[i] = nombres[i + 1];
+                precios[i] = precios[i + 1];
+                stock[i] = stock[i + 1];
+            }
+            contador--;
+            Console.WriteLine("\nProducto eliminado correctamente.");
+        }
+    }
+static void OrdenarProducto()
+    {
+        if (contador == 0)
+        {
+            Console.WriteLine("No hay productos para ordenar.");
+            return;
+        }
+
+        for (int i = 0; i < contador - 1; i++)
+        {
+            for (int j = 0; j < contador - 1 - i; j++)
+            {
+                if (precios[j] > precios[j + 1])
+                {
+                    double tempPrecio = precios[j];
+                    precios[j] = precios[j + 1];
+                    precios[j + 1] = tempPrecio;
+
+                    string tempCodigo = codigos[j];
+                    codigos[j] = codigos[j + 1];
+                    codigos[j + 1] = tempCodigo;
+
+                    string tempNombre = nombres[j];
+                    nombres[j] = nombres[j + 1];
+                    nombres[j + 1] = tempNombre;
+
+                    int tempStock = stock[j];
+                    stock[j] = stock[j + 1];
+                    stock[j + 1] = tempStock;
+                }
+            }
+        }
+        Console.WriteLine("\nProductos ordenados por precio exitosamente.");
+    }
+static void MostrarResumen()
+    {
+        if (contador == 0)
+        {
+            Console.WriteLine("No hay productos registrados para generar un resumen.");
+            return;
+        }
+
+        double sumaTotalPrecios = 0;
+        int indiceMayor = 0;
+        int indiceMenor = 0;
+
+        for (int i = 0; i < contador; i++)
+        {
+            sumaTotalPrecios += precios[i];
+            if (precios[i] > precios[indiceMayor]) indiceMayor = i;
+            if (precios[i] < precios[indiceMenor]) indiceMenor = i;
+        }
+
+        Console.WriteLine("\n====== RESUMEN DE PRODUCTOS ======");
+        Console.WriteLine($"Total de elementos registrados: {contador}");
+        Console.WriteLine($"Suma total del campo numérico (Precios): S/ {sumaTotalPrecios}");
+        Console.WriteLine($"Elemento con mayor valor: {nombres[indiceMayor]} (S/ {precios[indiceMayor]})");
+        Console.WriteLine($"Elemento con menor valor: {nombres[indiceMenor]} (S/ {precios[indiceMenor]})");
+        Console.WriteLine("==================================");
+    }
