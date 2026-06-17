@@ -183,8 +183,6 @@ class Program
         Console.WriteLine("Producto no encontrado.");
     }
 }
-
-}
 static void EliminarProducto()
     {
         if (contador == 0)
@@ -283,3 +281,38 @@ static void MostrarResumen()
         Console.WriteLine($"Elemento con menor valor: {nombres[indiceMenor]} (S/ {precios[indiceMenor]})");
         Console.WriteLine("==================================");
     }
+    static void ModificarProducto()
+    {
+        Console.Write("Ingrese el código del producto a modificar: ");
+        string codigoBuscado = Console.ReadLine();
+
+        int posicion = -1;
+
+        for (int i = 0; i < codigos.Count; i++)
+        {
+            if (codigos[i] == codigoBuscado)
+            {
+                posicion = i;
+                break;
+            }
+        }
+
+        if (posicion == -1)
+        {
+            Console.WriteLine("Producto no encontrado.");
+            return;
+        }
+
+        Console.Write("Nuevo nombre: ");
+        nombres[posicion] = Console.ReadLine();
+
+        Console.Write("Nuevo precio: ");
+        precios[posicion] = double.Parse(Console.ReadLine());
+
+        Console.Write("Nuevo stock: ");
+        stock[posicion] = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Producto modificado correctamente.");
+    }
+
+    
