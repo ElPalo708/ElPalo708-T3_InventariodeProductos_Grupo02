@@ -187,5 +187,39 @@ class Program
 }
 static void EliminarProducto()
     {
-        Console.WriteLine("Función de eliminación en desarrollo...");
+        if (contador == 0)
+        {
+            Console.WriteLine("No hay productos registrados para eliminar.");
+            return;
+        }
+
+        Console.Write("Ingrese el código del producto a eliminar: ");
+        string codigoBuscar = Console.ReadLine();
+        int posicionEncontrada = -1;
+
+        for (int i = 0; i < contador; i++)
+        {
+            if (codigos[i] == codigoBuscar)
+            {
+                posicionEncontrada = i;
+                break;
+            }
+        }
+
+        if (posicionEncontrada == -1)
+        {
+            Console.WriteLine("Producto no encontrado.");
+        }
+        else
+        {
+            for (int i = posicionEncontrada; i < contador - 1; i++)
+            {
+                codigos[i] = codigos[i + 1];
+                nombres[i] = nombres[i + 1];
+                precios[i] = precios[i + 1];
+                stock[i] = stock[i + 1];
+            }
+            contador--;
+            Console.WriteLine("\nProducto eliminado correctamente.");
+        }
     }
