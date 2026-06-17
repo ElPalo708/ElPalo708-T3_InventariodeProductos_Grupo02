@@ -185,3 +185,7 @@ class Program
 }
 
 }
+static void EliminarProducto()
+    {
+        Console.WriteLine("Función de eliminación en desarrollo...");
+    }
