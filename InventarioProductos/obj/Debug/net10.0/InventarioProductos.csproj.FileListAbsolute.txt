@@ -12,3 +12,4 @@ C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_G
 C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\obj\Debug\net10.0\InventarioProductos.pdb
 C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\obj\Debug\net10.0\InventarioProductos.genruntimeconfig.cache
 C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\obj\Debug\net10.0\ref\InventarioProductos.dll
+C:\Users\Us\Documents\Github\Csharp\T3 Fund\ElPalo708-T3_InventariodeProductos_Grupo02\InventarioProductos\obj\Debug\net10.0\InventarioProductos.sourcelink.json

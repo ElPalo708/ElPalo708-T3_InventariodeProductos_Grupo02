@@ -10,7 +10,10 @@ class Program
     static List<int> stock = new List<int>();
 
     static int capacidadMaxima = 100;
-
+    static int contador
+{
+    get { return codigos.Count; }
+}
     static void Main()
     {
         int opcion;
@@ -210,15 +213,10 @@ static void EliminarProducto()
         }
         else
         {
-            for (int i = posicionEncontrada; i < contador - 1; i++)
-            {
-                codigos[i] = codigos[i + 1];
-                nombres[i] = nombres[i + 1];
-                precios[i] = precios[i + 1];
-                stock[i] = stock[i + 1];
-            }
-            contador--;
-            Console.WriteLine("\nProducto eliminado correctamente.");
+            codigos.RemoveAt(posicionEncontrada);
+            nombres.RemoveAt(posicionEncontrada);
+            precios.RemoveAt(posicionEncontrada);
+            stock.RemoveAt(posicionEncontrada);
         }
     }
 static void OrdenarProducto()
@@ -315,4 +313,34 @@ static void MostrarResumen()
         Console.WriteLine("Producto modificado correctamente.");
     }
 
-    
+    static void InsertarProducto()
+    {
+        Console.Write("Posición donde insertar: ");
+        int posicion = int.Parse(Console.ReadLine());
+
+        if (posicion < 0 || posicion > codigos.Count)
+        {
+            Console.WriteLine("Posición inválida.");
+            return;
+        }
+
+        Console.Write("Código: ");
+        string codigo = Console.ReadLine();
+
+        Console.Write("Nombre: ");
+        string nombre = Console.ReadLine();
+
+        Console.Write("Precio: ");
+        double precio = double.Parse(Console.ReadLine());
+
+        Console.Write("Stock: ");
+        int cantidad = int.Parse(Console.ReadLine());
+
+        codigos.Insert(posicion, codigo);
+        nombres.Insert(posicion, nombre);
+        precios.Insert(posicion, precio);
+        stock.Insert(posicion, cantidad);
+
+        Console.WriteLine("Producto insertado correctamente.");
+    }
+}
