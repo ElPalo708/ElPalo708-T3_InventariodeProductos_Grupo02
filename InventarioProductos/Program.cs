@@ -223,3 +223,37 @@ static void EliminarProducto()
             Console.WriteLine("\nProducto eliminado correctamente.");
         }
     }
+static void OrdenarProducto()
+    {
+        if (contador == 0)
+        {
+            Console.WriteLine("No hay productos para ordenar.");
+            return;
+        }
+
+        for (int i = 0; i < contador - 1; i++)
+        {
+            for (int j = 0; j < contador - 1 - i; j++)
+            {
+                if (precios[j] > precios[j + 1])
+                {
+                    double tempPrecio = precios[j];
+                    precios[j] = precios[j + 1];
+                    precios[j + 1] = tempPrecio;
+
+                    string tempCodigo = codigos[j];
+                    codigos[j] = codigos[j + 1];
+                    codigos[j + 1] = tempCodigo;
+
+                    string tempNombre = nombres[j];
+                    nombres[j] = nombres[j + 1];
+                    nombres[j + 1] = tempNombre;
+
+                    int tempStock = stock[j];
+                    stock[j] = stock[j + 1];
+                    stock[j + 1] = tempStock;
+                }
+            }
+        }
+        Console.WriteLine("\nProductos ordenados por precio exitosamente.");
+    }
